@@ -1,0 +1,106 @@
+.homepage {
+  .container {
+    .top-header {
+      display: flex;
+      justify-content: space-between;
+      padding: 30px 0;
+      h3 {
+        margin-top: 0;
+      }
+      .menu {
+        display: flex;
+        gap: 10px;
+        a {
+          color: #d4d4d4;
+          text-decoration: none;
+          font-size: 16px;
+          font-weight: bold;
+          font-family: NotoSans-Bold;
+        }
+        a.active {
+          border-bottom: 3px solid black;
+          color: black;
+          padding-bottom: 5px;
+        }
+      }
+    }
+    .loading {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      font-size: 40px;
+      width: 100%;
+      padding: 100px 0;
+    }
+    .Countrieslist {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .eachItem {
+        width: 44%;
+        display: flex;
+        border: 2px solid black;
+        padding: 30px;
+        margin-bottom: 20px;
+        box-shadow: 5px 10px #d4d4d4;
+        .item {
+          display: flex;
+          gap: 10px;
+          .item-text {
+            display: flex;
+            flex-direction: column;
+            h3 {
+              margin-top: 0;
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+      .flag {
+        img {
+          width: 100px;
+          // max-height: 30px;
+          border: 1px solid #dbdbdb;
+          background-color: #666;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .homepage .container .Countrieslist .eachItem {
+    width: 43%;
+  }
+}
+@media (max-width: 1050px) {
+  .homepage .container .Countrieslist .eachItem {
+    width: 41%;
+  }
+}
+@media (max-width: 850px) {
+  .homepage .container .Countrieslist .eachItem {
+    width: 39%;
+  }
+}
+@media (max-width: 690px) {
+  .homepage .container .Countrieslist .eachItem {
+    width: 90%;
+  }
+}
+
+@media (max-width: 450px) {
+  .homepage .container .Countrieslist .eachItem {
+    width: 75%;
+  }
+  .homepage .container .Countrieslist .flag img {
+    width: 70px;
+  }
+  .homepage .container .Countrieslist .eachItem .item .item-text h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .homepage .container .Countrieslist .eachItem .item .item-text label {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+}

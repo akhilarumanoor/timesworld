@@ -1,0 +1,16 @@
+@font-face {
+  font-family: NotoSans-Light;
+  src: url(./Assets/fonts//Noto_Sans/NotoSans-Light.ttf);
+}
+@font-face {
+  font-family: NotoSans-Bold;
+  src: url(./Assets/fonts//Noto_Sans/NotoSans-Bold.ttf);
+}
+.App {
+  font-family: NotoSans-Light;
+  h1,
+  h3,
+  h2 {
+    font-family: NotoSans-Bold;
+  }
+}
